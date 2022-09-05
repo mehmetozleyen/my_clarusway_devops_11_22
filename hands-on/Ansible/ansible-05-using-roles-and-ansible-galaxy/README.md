@@ -8,8 +8,8 @@ At the end of this hands-on training, students will be able to;
 - Explain what is Ansible role
 - Learn how to create, find and use a role.  
 
-# Outline
-#//
+## Outline
+
 - Part 1 - Install Ansible
 
 - Part 2 - Using Ansible Roles 
