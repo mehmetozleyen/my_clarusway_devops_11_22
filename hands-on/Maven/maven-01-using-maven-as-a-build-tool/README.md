@@ -1,4 +1,4 @@
-# Hands-on Maven-01 : Using Maven As a Build Tool
+## Hands-on Maven-01 : Using Maven As a Build Tool
 
 Purpose of the this hands-on training is to teach the students how to use Maven with Java as a build tool.
 
