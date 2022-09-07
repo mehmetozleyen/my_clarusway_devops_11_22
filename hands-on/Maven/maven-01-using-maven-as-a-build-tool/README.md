@@ -5,6 +5,7 @@ Purpose of the this hands-on training is to teach the students how to use Maven 
 
 ## Learning Outcomes
 
+
 At the end of the this hands-on training, students will be able to;
 
 - install Maven and Java-11 on Amazon Linux 2 EC2 instance
