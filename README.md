@@ -18,7 +18,7 @@ The clarusway-workshop repository contains materials related to the IT trainings
 
 - [Teamwork Agendas](./teamwork-agendas)
 
-## Rules & Policy
+### Rules & Policy
 
 - This repo is read only for Students of Clarusway.
 
