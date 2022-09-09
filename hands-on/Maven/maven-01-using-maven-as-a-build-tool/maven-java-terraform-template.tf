@@ -4,9 +4,9 @@
 
 provider "aws" {
   region = "us-east-1"
-  profile = "mehmet"
-  //  access_key = ""
-  //  secret_key = ""
+  #profile = ""
+  access_key = "AKIARX5UWBPNQV35H7VU"
+  secret_key = "Ry4S5RtgjCJUytHU2mfuMN15NTGiaWxkGdi+KAif"
   //  If you have entered your credentials in AWS CLI before, you do not need to use these arguments.
 }
 
