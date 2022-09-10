@@ -1,4 +1,4 @@
-## Hands-on ECR-01 : Pushing Docker Images to ECR Manually
+# Hands-on ECR-01 : Pushing Docker Images to ECR Manually
 
 Purpose of the this hands-on training is to give basic understanding of how to use AWS Elastic Container Registry (ECR) and how to manage docker images using ECR.
 
