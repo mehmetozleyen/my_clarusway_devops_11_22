@@ -1,0 +1,11 @@
+  //aws_access_key = "AKIARX5UWBPN7CYYVLUT"
+  //aws_secret_key = "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"
+myami = "ami-0f095f89ae15be883"
+mykey = "firstkey"
+tags = ["postgresql", "nodejs", "react"]
+instancetype = "t2.micro"
+controlinstancetype = "t3a.medium"
+num = 3
+region = "us-east-1"
+mysecgr = "ansible-project-207-sec-gr"
+user = "mehmet"
