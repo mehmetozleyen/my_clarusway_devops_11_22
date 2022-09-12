@@ -1,4 +1,4 @@
-# Hands-on Docker-01 : Installing Docker on Amazon Linux 2 AWS EC2 Instance
+## Hands-on Docker-01 : Installing Docker on Amazon Linux 2 AWS EC2 Instance
 
 Purpose of the this hands-on training is to teach the students how to install Docker on on Amazon Linux 2 EC2 instance.
 
