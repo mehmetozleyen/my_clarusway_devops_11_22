@@ -108,7 +108,8 @@ ssh -i .ssh/xxxxx.pem ec2-user@ec2-3-133-106-98.us-east-2.compute.amazonaws.com
 ```bash
 sudo su
 
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin xxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com
+
+
 ```
 
 ## Part 4 - Managing Docker Images using AWS ECR as Repository
@@ -201,8 +202,8 @@ docker push xxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/student1-repo/todo-app:l
 - Create an container from image located ECR
 
 ```bash
-docker pull xxxxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/student1-repo/todo-app:latest
-docker run --name todo -dp 80:3000 xxxxxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/student1-repo/todo-app:latest
+docker pull 120101145563.dkr.ecr.us-east-1.amazonaws.com/student1-repo/todo-app:latest
+docker run --name todo -dp 80:3000 120101145563.dkr.ecr.us-east-1.amazonaws.com/student1-repo/todo-app:latest
 ```
 - Stop and remove container
 
@@ -235,7 +236,7 @@ docker push xxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/student1-repo/todo-app:l
 - Create an container from image located ECR
 
 ```bash
-docker run --name todo-v1 -dp 80:3000 xxxxxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/student1-repo/todo-app:latest
+docker run --name todo-v1 -dp 80:3000 120101145563.dkr.ecr.us-east-1.amazonaws.com/student1-repo/todo-app:latest
 ```
 - Show the changes in the browser 
 
@@ -303,7 +304,7 @@ aws ecr batch-delete-image \
 
 ```bash
 aws ecr delete-repository \
-      --repository-name student2-repo/todo-app \
+      --repository-name student1-repo/todo-app \
       --force
 ```
 
