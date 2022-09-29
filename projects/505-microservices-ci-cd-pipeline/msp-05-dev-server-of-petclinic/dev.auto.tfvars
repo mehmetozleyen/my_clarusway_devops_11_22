@@ -1,5 +1,5 @@
 mykey = "clarusway"
-ami = "ami-01cc34ab2709337aa"
+ami = "ami-026b57f3c383c2eec"
 region = "us-east-1"
 instance_type = "t3a.medium"
 devops_server_secgr = "petclinic-dev-server-secgr"
