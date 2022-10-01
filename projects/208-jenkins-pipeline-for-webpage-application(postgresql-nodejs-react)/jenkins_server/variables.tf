@@ -2,7 +2,7 @@ variable "mykey" {
   default = "clarus"
 }
 variable "myami" {
-  default = "ami-0022f774911c1d690"
+  default = "ami-026b57f3c383c2eec"
 }
 variable "instancetype" {
   default = "t3a.medium"
@@ -12,4 +12,8 @@ variable "tag" {
 }
 variable "jenkins-sg" {
   default = "jenkins-server-sec-gr-208"
+}
+
+variable "user" {
+  default = "clarusway"
 }

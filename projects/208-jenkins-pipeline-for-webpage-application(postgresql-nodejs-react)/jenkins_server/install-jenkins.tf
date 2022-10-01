@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_iam_role" "aws_access" {
-  name = "awsrole"
+  name = "awsrole-${var.user}"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -26,12 +26,12 @@ resource "aws_iam_role" "aws_access" {
       },
     ]
   })
-  managed_policy_arns = ["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess", "arn:aws:iam::aws:policy/AmazonEC2FullAccess", "arn:aws:iam::aws:policy/IAMFullAccess"]
+  managed_policy_arns = ["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess", "arn:aws:iam::aws:policy/AmazonEC2FullAccess", "arn:aws:iam::aws:policy/IAMFullAccess", "arn:aws:iam::aws:policy/AmazonS3FullAccess"]
 
 }
 
 resource "aws_iam_instance_profile" "ec2-profile" {
-  name = "jenkins-project-profile"
+  name = "jenkins-project-profile-${var.user}"
   role = aws_iam_role.aws_access.name
 }
 
@@ -49,7 +49,7 @@ resource "aws_instance" "tf-jenkins-server" {
 }
 
 resource "aws_security_group" "tf-jenkins-sec-gr" {
-  name = var.jenkins-sg
+  name = "${var.jenkins-sg}-${var.user}"
   tags = {
     Name = var.jenkins-sg
   }
