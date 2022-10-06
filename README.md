@@ -1,4 +1,4 @@
-### clarusway-devops-11-22:
+## clarusway-devops-11-22:
 
 This private workshop repository contains projects, hands-on training, coding challenges, and class-notes for the Clarusway Students of AWS & DevOps-11.
 
